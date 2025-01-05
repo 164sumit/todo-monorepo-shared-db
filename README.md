@@ -17,8 +17,8 @@ This is a monorepo setup using **Turborepo** that includes a Next.js frontend an
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/164sumit/todo-monorepo-shared-db.git
+   cd todo-monorepo-shared-db
    ```
 
 2. Install dependencies:
