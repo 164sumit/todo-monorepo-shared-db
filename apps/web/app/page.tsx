@@ -7,8 +7,10 @@ import { LayoutDashboard } from 'lucide-react'
 import LogoutButton from '@/components/LogoutButton'
 import { useSession } from 'next-auth/react'
 import Username from '@/components/Username'
+import { auth } from '@/auth'
 
-const page = () => {
+const page = async() => {
+      const session = await auth()
   
   
   return (
@@ -26,8 +28,12 @@ const page = () => {
 
             </div>
             <div>
+            <div className="hidden lg:block">
+              {/* <h1 className="text-2xl font-bold text-gray-900">Task Manager</h1> */}
+              <p className="text-sm text-gray-500 sm:mt-0">Welcome, {session?.user?.name || 'Guest'}</p>
+            </div>
 
-            <Username />
+            {/* <Username /> */}
             </div>
            <LogoutButton/>
           </div>
