@@ -44,6 +44,9 @@ This is a monorepo setup using **Turborepo** that includes a Next.js frontend an
 - The **Next.js** frontend uses **Redux** to store all todo items in a centralized store.
 - **TanStack Query** is used for optimizing API calls and ensuring efficient data fetching and state management.
 - Make sure to configure your `.env` file with the necessary database connection strings and environment variables.
+- If the signup functionality does not work, you can use the test user credentials:
+  - **Email:** test@gmail.com
+  - **Password:** 123
 
 ## Contributions
 
