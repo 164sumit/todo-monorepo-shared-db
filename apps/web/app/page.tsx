@@ -55,7 +55,7 @@ const page = async() => {
           {/* Main Task List */}
           <div className="mt-8 lg:mt-0 lg:col-span-8 xl:col-span-9">
             <div className="bg-white rounded-lg shadow-sm p-6">
-              <AllTasks />
+              <AllTasks userId={parseInt(session?.user?.image)} />
             </div>
           </div>
         </div>

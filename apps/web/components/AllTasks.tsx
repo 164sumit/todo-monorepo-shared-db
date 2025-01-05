@@ -10,10 +10,10 @@ import { TaskCard } from './TaskCard';
 import { useSession } from 'next-auth/react';
 // import { TaskCard } from './TaskCard';
 
-const AllTasks = () => {
+const AllTasks = ({userId}:{userId:number}) => {
   const {data:session}=useSession()
-    const userId1=session?.user?.image! ;
-    const userId=parseInt(userId1)
+    // const userId1=session?.user?.image! ;
+    // const userId=parseInt(userId1)
   const dispatch = useDispatch();
   
   const { data: allTasks, error, isLoading } = useQuery({
